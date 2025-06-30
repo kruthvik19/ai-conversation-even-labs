@@ -89,6 +89,7 @@ fastify.post("/outbound-call", async (request, reply) => {
       }/outbound-call-twiml?prompt=${encodeURIComponent(
         prompt
       )}&first_message=${encodeURIComponent(first_message)}`,
+      record: true,
     });
 
     reply.send({
